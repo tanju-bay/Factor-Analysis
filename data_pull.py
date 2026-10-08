@@ -20,7 +20,7 @@ def data_pull(ticker):
     df_factors = df_factors / 100
 
     # pull the ticker data from yf
-    df_ticker = yf.download(ticker, start="2020-01-01", end="2025-10-31")
+    df_ticker = yf.download(ticker, start="2021-01-01", end="2026-08-31")
     # calculate daily return
     df_ticker["daily return"] = df_ticker["Close"].pct_change()
     
